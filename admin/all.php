@@ -26,7 +26,7 @@ $LesAppartements = $crud->ListerApp();
                 <td><?= $val[3] ?></td>
                 <td><?= $val[4] ?></td>
                 <td><?= $val[5] ?></td>
-                <td><?= $val[6] ?></td>
+                <td><?= $val[7] ?></td>
                 <td>
                     <a href="modify.php?ref=<?= $val[0] ?>" class="btn btn-warning btn-sm">Modifier</a>
                     <a href="delete.php?ref=<?= $val[0] ?>" class="btn btn-danger btn-sm">Supprimer</a>

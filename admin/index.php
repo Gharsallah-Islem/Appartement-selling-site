@@ -15,22 +15,302 @@
     <div class="container mt-3">
 
         <h1>Appartements List</h1>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum officia esse, minima ipsum iusto dicta reprehenderit eius, numquam inventore sed debitis atque illum, velit earum nulla similique explicabo aliquid. Quod.
-        Ipsam id soluta rem. Inventore quae suscipit qui ullam sed dolor voluptatem animi repudiandae explicabo! Atque esse, quia quas, sint dignissimos modi ipsam fugiat reiciendis eaque eligendi earum excepturi. Officia.
-        Quidem modi, corrupti distinctio sequi velit repellat ea quam officia ipsa enim temporibus tempore. Eius voluptate aspernatur labore rem corporis, totam nam odit quam qui impedit? Molestias enim placeat nihil.
-        Autem, doloremque, sed quam eaque quisquam labore, ea explicabo nostrum voluptatem fuga atque at saepe nam dolore. Corporis quis officia incidunt ut veniam, nobis voluptates iusto distinctio a. Consequuntur, deserunt.
-        Repellendus ipsum suscipit eos deserunt? Repudiandae ipsum consequatur odio corporis autem quidem veniam temporibus maxime explicabo optio mollitia magni, blanditiis voluptatibus laudantium in nemo, a magnam animi culpa, deserunt inventore?
-        Unde possimus atque veritatis voluptas doloribus dolor fugit, excepturi non ex nemo laboriosam? Culpa ea perspiciatis consectetur inventore reprehenderit est architecto incidunt qui, asperiores pariatur. Quaerat sint debitis asperiores voluptates?
-        Ipsum repudiandae corporis molestiae dolores voluptate facere obcaecati omnis, assumenda illo quae iste, tenetur, deserunt eum eveniet atque id voluptatum culpa sapiente fuga error ex? Asperiores impedit modi magni temporibus.
-        Eius, soluta. Non laboriosam ipsam quasi earum, numquam corrupti, rerum placeat reiciendis soluta possimus unde fugit aliquid aperiam architecto est optio error modi! Iste iure illo architecto natus veritatis recusandae.
-        Numquam impedit, ipsa ut similique enim ad illo itaque atque nulla sunt, tenetur vero animi nam perspiciatis explicabo quis labore cupiditate laudantium repellat. A molestiae magni impedit eveniet voluptatum? Velit?
-        Aliquam earum suscipit consectetur ea exercitationem! Perspiciatis explicabo eos, consectetur eius, blanditiis quibusdam alias cumque laborum nobis asperiores vitae quisquam distinctio fugiat. Cupiditate fuga dolores quaerat, inventore dolorum consequuntur tempore.
-        Aut, laboriosam minima consequuntur placeat ducimus ratione architecto explicabo natus ipsa eveniet debitis nihil perspiciatis qui? Cumque commodi aperiam ipsam impedit, velit quasi fugiat. Necessitatibus, voluptate? Dolorem mollitia corporis consequatur.
-        Cupiditate voluptas maxime eos ipsa molestiae. Perspiciatis numquam, tenetur exercitationem corrupti amet dicta ipsum omnis minima fugiat nemo iste earum dolores aspernatur, dignissimos sint obcaecati blanditiis a voluptates rem ea?
-        Expedita sequi nulla vitae autem ut error atque illo labore doloribus quis animi reiciendis perferendis reprehenderit dolor earum modi omnis molestiae itaque quo eius accusantium, eveniet minus! Exercitationem, sint quibusdam.
-        Cum, ex repellendus neque eligendi perferendis iusto alias quo nisi doloremque provident amet voluptatibus ipsa voluptate beatae sapiente necessitatibus id sequi libero iste numquam? Similique et reprehenderit doloribus laudantium iusto.
-        Possimus alias dicta similique vero sunt ullam eaque asperiores officiis, est vel velit reprehenderit sequi maxime quisquam. Repudiandae at porro labore totam recusandae, expedita dolores adipisci, temporibus, consequuntur voluptatum odit?
-    </div>
-</body>
+        <div class="container">
+            <div class="row">
+                <!-- Résumé rapide -->
+                <div class="col-md-4">
+                    <div class="card text-white bg-primary mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Total Properties</h5>
+                            <p class="card-text fs-1">125</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card text-white bg-success mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Available Apartments</h5>
+                            <p class="card-text fs-1">75</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card text-white bg-danger mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Villas Listed</h5>
+                            <p class="card-text fs-1">50</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-</html>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card">
+                        <div class="card-header bg-dark text-white">
+                            Liste des propriétés les plus demandés
+                        </div>
+                        <div class="card-body">
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Référence</th>
+                                        <th>Propriétaire</th>
+                                        <th>Type</th>
+                                        <th>Localité</th>
+                                        <th>Statut</th>
+                                        <th>Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>IM-001</td>
+                                        <td>Mohamed Ben Ahmed</td>
+                                        <td>Appartement</td>
+                                        <td>Tunis</td>
+                                        <td><span class="badge bg-success">Disponible</span></td>
+                                        <td>
+                                            <button class="btn btn-sm btn-primary">Modifier</button>
+                                            <button class="btn btn-sm btn-danger">Supprimer</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>IM-002</td>
+                                        <td>Khadija Abidli</td>
+                                        <td>Villa</td>
+                                        <td>Sousse</td>
+                                        <td><span class="badge bg-warning">En attente</span></td>
+                                        <td>
+                                            <button class="btn btn-sm btn-primary">Modifier</button>
+                                            <button class="btn btn-sm btn-danger">Supprimer</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>IM-003</td>
+                                        <td>Ali Hajji</td>
+                                        <td>Appartement</td>
+                                        <td>Monastir</td>
+                                        <td><span class="badge bg-success">Disponible</span></td>
+                                        <td>
+                                            <button class="btn btn-sm btn-primary">Modifier</button>
+                                            <button class="btn btn-sm btn-danger">Supprimer</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>IM-004</td>
+                                        <td>Fatma Zahra Akroud</td>
+                                        <td>Villa</td>
+                                        <td>Sfax</td>
+                                        <td><span class="badge bg-danger">Indisponible</span></td>
+                                        <td>
+                                            <button class="btn btn-sm btn-primary">Modifier</button>
+                                            <button class="btn btn-sm btn-danger">Supprimer</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td>IM-005</td>
+                                        <td>Youssef Derghouthi</td>
+                                        <td>Appartement</td>
+                                        <td>Gabès</td>
+                                        <td><span class="badge bg-success">Disponible</span></td>
+                                        <td>
+                                            <button class="btn btn-sm btn-primary">Modifier</button>
+                                            <button class="btn btn-sm btn-danger">Supprimer</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>6</td>
+                                        <td>IM-006</td>
+                                        <td>Houda Fitouri</td>
+                                        <td>Villa</td>
+                                        <td>Nabeul</td>
+                                        <td><span class="badge bg-warning">En attente</span></td>
+                                        <td>
+                                            <button class="btn btn-sm btn-primary">Modifier</button>
+                                            <button class="btn btn-sm btn-danger">Supprimer</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>7</td>
+                                        <td>IM-007</td>
+                                        <td>Mohamed Trabelsi</td>
+                                        <td>Appartement</td>
+                                        <td>Bizerte</td>
+                                        <td><span class="badge bg-success">Disponible</span></td>
+                                        <td>
+                                            <button class="btn btn-sm btn-primary">Modifier</button>
+                                            <button class="btn btn-sm btn-danger">Supprimer</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>8</td>
+                                        <td>IM-008</td>
+                                        <td>Zainab Gharbi</td>
+                                        <td>Villa</td>
+                                        <td>Ariana</td>
+                                        <td><span class="badge bg-danger">Indisponible</span></td>
+                                        <td>
+                                            <button class="btn btn-sm btn-primary">Modifier</button>
+                                            <button class="btn btn-sm btn-danger">Supprimer</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>9</td>
+                                        <td>IM-009</td>
+                                        <td>Hamza Bouchnak</td>
+                                        <td>Appartement</td>
+                                        <td>Béja</td>
+                                        <td><span class="badge bg-success">Disponible</span></td>
+                                        <td>
+                                            <button class="btn btn-sm btn-primary">Modifier</button>
+                                            <button class="btn btn-sm btn-danger">Supprimer</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>10</td>
+                                        <td>IM-010</td>
+                                        <td>Aisha Mezni</td>
+                                        <td>Villa</td>
+                                        <td>Mahdia</td>
+                                        <td><span class="badge bg-warning">En attente</span></td>
+                                        <td>
+                                            <button class="btn btn-sm btn-primary">Modifier</button>
+                                            <button class="btn btn-sm btn-danger">Supprimer</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>11</td>
+                                        <td>IM-011</td>
+                                        <td>Salem Hammami</td>
+                                        <td>Maison</td>
+                                        <td>Tataouine</td>
+                                        <td><span class="badge bg-success">Disponible</span></td>
+                                        <td>
+                                            <button class="btn btn-sm btn-primary">Modifier</button>
+                                            <button class="btn btn-sm btn-danger">Supprimer</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>12</td>
+                                        <td>IM-012</td>
+                                        <td>Noura Maaloul</td>
+                                        <td>Appartement</td>
+                                        <td>Tozeur</td>
+                                        <td><span class="badge bg-warning">En attente</span></td>
+                                        <td>
+                                            <button class="btn btn-sm btn-primary">Modifier</button>
+                                            <button class="btn btn-sm btn-danger">Supprimer</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>13</td>
+                                        <td>IM-013</td>
+                                        <td>Fares Chouchene</td>
+                                        <td>Villa</td>
+                                        <td>Gafsa</td>
+                                        <td><span class="badge bg-danger">Indisponible</span></td>
+                                        <td>
+                                            <button class="btn btn-sm btn-primary">Modifier</button>
+                                            <button class="btn btn-sm btn-danger">Supprimer</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>14</td>
+                                        <td>IM-014</td>
+                                        <td>Lamia Selmi</td>
+                                        <td>Maison</td>
+                                        <td>Kairouan</td>
+                                        <td><span class="badge bg-success">Disponible</span></td>
+                                        <td>
+                                            <button class="btn btn-sm btn-primary">Modifier</button>
+                                            <button class="btn btn-sm btn-danger">Supprimer</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>15</td>
+                                        <td>IM-015</td>
+                                        <td>Houssem Jelassi</td>
+                                        <td>Appartement</td>
+                                        <td>Zaghouan</td>
+                                        <td><span class="badge bg-warning">En attente</span></td>
+                                        <td>
+                                            <button class="btn btn-sm btn-primary">Modifier</button>
+                                            <button class="btn btn-sm btn-danger">Supprimer</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>16</td>
+                                        <td>IM-016</td>
+                                        <td>Rim Bouazizi</td>
+                                        <td>Villa</td>
+                                        <td>Manouba</td>
+                                        <td><span class="badge bg-success">Disponible</span></td>
+                                        <td>
+                                            <button class="btn btn-sm btn-primary">Modifier</button>
+                                            <button class="btn btn-sm btn-danger">Supprimer</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>17</td>
+                                        <td>IM-017</td>
+                                        <td>Adel Mabrouk</td>
+                                        <td>Maison</td>
+                                        <td>Jendouba</td>
+                                        <td><span class="badge bg-danger">Indisponible</span></td>
+                                        <td>
+                                            <button class="btn btn-sm btn-primary">Modifier</button>
+                                            <button class="btn btn-sm btn-danger">Supprimer</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>18</td>
+                                        <td>IM-018</td>
+                                        <td>Sara Karray</td>
+                                        <td>Appartement</td>
+                                        <td>Kebili</td>
+                                        <td><span class="badge bg-warning">En attente</span></td>
+                                        <td>
+                                            <button class="btn btn-sm btn-primary">Modifier</button>
+                                            <button class="btn btn-sm btn-danger">Supprimer</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>19</td>
+                                        <td>IM-019</td>
+                                        <td>Karim Ben Salem</td>
+                                        <td>Villa</td>
+                                        <td>Medenine</td>
+                                        <td><span class="badge bg-success">Disponible</span></td>
+                                        <td>
+                                            <button class="btn btn-sm btn-primary">Modifier</button>
+                                            <button class="btn btn-sm btn-danger">Supprimer</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>20</td>
+                                        <td>IM-020</td>
+                                        <td>Amira Hajri</td>
+                                        <td>Maison</td>
+                                        <td>Sidi Bouzid</td>
+                                        <td><span class="badge bg-danger">Indisponible</span></td>
+                                        <td>
+                                            <button class="btn btn-sm btn-primary">Modifier</button>
+                                            <button class="btn btn-sm btn-danger">Supprimer</button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+</body>

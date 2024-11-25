@@ -46,8 +46,10 @@ if (isset($_POST['ok'])) {
     $crud = new CRUDAppartement();
     $appartement = new Appartement($referance, $proprietaire, $localite, $nbPieces, $domaineUsage, $surfaceCommune);
     $result = $crud->AjouterApp($appartement);
+    
 
     if ($result) {
+        
         header("Location: all.php");
         exit();
     } else {

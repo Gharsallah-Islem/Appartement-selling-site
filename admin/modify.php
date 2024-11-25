@@ -1,5 +1,22 @@
 <?php
 ob_start();
+require_once "../config.php";
+require_once "../classes/CRUDAppartement.php";
+require_once "../classes/Appartement.php";
+
+if (isset($_GET['ref'])) {
+    $reference = $_GET['ref'];
+    $crud = new CRUDAppartement();
+    $appartement = $crud->RecuppererApp($reference);
+
+    if ($appartement) {
+        $appartement = $appartement[0];
+    } else {
+        echo "Appartement not found.";
+        exit();
+    }
+} 
+
 ?>
 <div class="container mt-5">
     <h1 class="text-center">Modifier un Appartement</h1>
@@ -23,7 +40,7 @@ ob_start();
         </div>
         <div class="mb-3">
             <label for="surfaceCommune" class="form-label">Surface Commune</label>
-            <input type="number" step="0.01" class="form-control" id="surfaceCommune" name="surfaceCommune" value="<?= $appartement[5] ?>">
+            <input type="number" step="0.01" class="form-control" id="surfaceCommune" name="surfaceCommune" value="<?= $appartement[7] ?>">
         </div>
         <button type="submit" class="btn btn-primary" name="ok">Modifier</button>
     </form>
@@ -34,23 +51,8 @@ require_once "../config.php";
 require_once "../classes/CRUDAppartement.php";
 require_once "../classes/Appartement.php";
 
-if (isset($_GET['reference'])) {
-    $reference = $_GET['reference'];
-    $crud = new CRUDAppartement();
-    $appartement = $crud->RecuppererApp($reference);
-
-    if ($appartement) {
-        $appartement = $appartement[0];
-    } else {
-        echo "Appartement not found.";
-        exit();
-    }
-} else {
-    echo "No reference provided.";
-    exit();
-}
-
 if (isset($_POST['ok'])) {
+    $crud = new CRUDAppartement();
     $reference = $_POST['reference'];
     $proprietaire = $_POST['proprietaire'];
     $localite = $_POST['localite'];

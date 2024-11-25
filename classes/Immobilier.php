@@ -6,16 +6,16 @@ class Immobilier
     public $localite;
     public $nbPieces;
     public $domaineUsage;
-    public $nature;
+    
 
-    public function __construct($reference, $proprietaire, $localite, $nbPieces, $domaineUsage, $nature)
+    public function __construct($reference, $proprietaire, $localite, $nbPieces, $domaineUsage)
     {
         $this->reference = $reference;
         $this->proprietaire = $proprietaire;
         $this->localite = $localite;
         $this->nbPieces = $nbPieces;
         $this->domaineUsage = $domaineUsage;
-        $this->nature = $nature;
+       
     }
 
     /**
@@ -108,22 +108,6 @@ class Immobilier
         return $this;
     }
 
-    /**
-     * Get the value of nature
-     */
-    public function getNature()
-    {
-        return $this->nature;
-    }
-
-    /**
-     * Set the value of nature
-     */
-    public function setNature($nature): self
-    {
-        $this->nature = $nature;
-
-        return $this;
-    }
+    
 }
 ?>

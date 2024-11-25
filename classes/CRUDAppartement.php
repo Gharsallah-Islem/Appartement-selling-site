@@ -9,9 +9,12 @@ class CRUDAppartement
         $con = new connexion();
         $this->pdo = $con->getConnexion();
     }
+   
+
     function AjouterApp(Appartement $appartement)
     {
-        $sql = "INSERT INTO immobilier VALUES($appartement->reference,'$appartement->proprietaire','$appartement->localite',$appartement->nbPieces,'$appartement->domaineUsage','$appartement->nature',$appartement->surfaceCommune)";
+        $ch = "Appartement";
+        $sql = "INSERT INTO immobilier VALUES($appartement->reference,'$appartement->proprietaire','$appartement->localite',$appartement->nbPieces,'$appartement->domaineUsage','$ch',NULL,$appartement->surfaceCommune)";
         $res = $this->pdo->exec($sql);
         return $res;
     }
@@ -23,7 +26,8 @@ class CRUDAppartement
     }
     function ModifierApp(Appartement $appartement)
     {
-        $sql = "UPDATE immobilier SET proprietaire='$appartement->proprietaire',localite='$appartement->localite',nbPieces=$appartement->nbPieces,domaineUsage='$appartement->domaineUsage',nature='$appartement->nature',surfaceCommune=$appartement->surfaceCommune WHERE reference=$appartement->reference";
+        $ch = "Appartement";
+        $sql = "UPDATE immobilier SET proprietaire='$appartement->proprietaire',localite='$appartement->localite',nbPieces=$appartement->nbPieces,domaineUsage='$appartement->domaineUsage',nature='$ch',surfaceCommune=$appartement->surfaceCommune WHERE reference=$appartement->reference";
         $res = $this->pdo->exec($sql);
         return $res;
     }
